@@ -1,0 +1,21 @@
+.formName {
+  margin-bottom: 18px;
+}
+
+.formEmail {
+  margin-bottom: 24px;
+}
+
+.formParticipant {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #e75626;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
