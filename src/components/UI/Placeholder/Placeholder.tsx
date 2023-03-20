@@ -7,6 +7,7 @@ type PlaceholderProps = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   type?: string;
   name?: string;
+  error?: string;
 };
 
 const Placeholder = ({
@@ -15,6 +16,7 @@ const Placeholder = ({
   onChange,
   type,
   name,
+  error,
 }: PlaceholderProps) => {
   /* Placeholder принимает объект props и использует его свойство placeholder в качестве значения по умолчанию для состояния placeholder, которое управляется с помощью хука useState */
   const [currentPlaceholder, setCurrentPlaceholder] =
@@ -32,7 +34,11 @@ const Placeholder = ({
 
   return (
     <input
-      className={styles.placeholder}
+      className={
+        error
+          ? `${styles.placeholder} ${styles.error}`
+          : `${styles.placeholder}`
+      }
       placeholder={currentPlaceholder}
       onFocus={handleFocus}
       onBlur={handleBlur}
