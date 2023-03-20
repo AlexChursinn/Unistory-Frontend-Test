@@ -1,0 +1,108 @@
+/* ===================================================================== */
+/* ОБНУЛЕНИЕ CТИЛЕЙ */
+
+/* Все теги по умолчанию имеют свои свойства в зависимости от бразуера и их перед началом работы надо сбрасывать чтобы ничего не мешало друг другу */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем обводки линий некоторых браузеров */
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Делаем блочными */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/* Уравнивают параметры шрифтов и элементов для разных браузеров */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Просим наследовать наш подключенный шрифт */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* Убирают некоторые особенности в разных браузерах */
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+/* Обнуляем все заголовки h */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Шрифт по Макету */
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url("./assets/fonts/AvenirNextCyr-Thin.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===================================================================== */
+body {
+  font-family: "Avenir Next Cyr", sans-serif; /* Шрифт основного текста по макету */
+  background: #171719;
+  color: #fff;
+}
+/* ===================================================================== */

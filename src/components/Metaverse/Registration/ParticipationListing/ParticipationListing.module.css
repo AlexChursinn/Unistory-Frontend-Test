@@ -1,0 +1,127 @@
+.participationListing {
+  width: 696px;
+  margin: 0px 0px 0px 136px;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #ffffff;
+  margin: 102px 0px 35px 0px;
+}
+
+.subTitle {
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.email {
+  margin-left: 145.5px;
+}
+
+.wallet {
+  margin-left: 213.87px;
+}
+
+.tableContainer {
+  height: 562px;
+  overflow: auto;
+  margin-top: 16px;
+  overflow-y: scroll;
+
+  padding-right: 28px;
+  position: relative;
+}
+
+/* Меняю стилизацию скрола внутри натблицы */
+.tableContainer::-webkit-scrollbar {
+  width: 3px;
+  height: 16px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #fff;
+  width: 1px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #e75626;
+  border-radius: 2px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e75626;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  height: 50px;
+}
+
+td:nth-of-type(1) {
+  width: 187px;
+}
+
+td:nth-of-type(2) {
+  width: 258px;
+}
+
+td:nth-of-type(3) {
+  width: 195px;
+}
+
+.participationListing td.noBorder {
+  border: none;
+}
+
+/* Крест удаления записи в таблице */
+
+.cross {
+  position: relative;
+  cursor: pointer;
+  padding-left: 17.51px;
+}
+
+.line {
+  position: absolute;
+
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.line1 {
+  transform: rotate(45deg);
+}
+
+.line2 {
+  transform: rotate(-45deg);
+}
+
+.participantsApi td {
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+a:link {
+  color: #fff; /* Цвет для непосещенных ссылок */
+}
+
+a:visited {
+  color: #fff; /* Цвет для посещенных ссылок */
+}

@@ -1,0 +1,152 @@
+.metaverse {
+  margin: 0px 64px;
+  position: relative; /* для circlesInfo */
+}
+
+.metaverseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.metaverseTitile {
+  margin-top: 260px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  color: white;
+  /*   line-height: 120%; */ /* Что-то не бьется по макету*/
+
+  /* Градиент наложения цвета, где текст заходит на картинку */
+  background: #e75626;
+  background: radial-gradient(circle at 81.7% 45%, #e75626 19.3%, #ffffff 19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Меняю OUR NEW по макет */
+.metaverse span {
+  -webkit-text-fill-color: rgba(23, 23, 25, 1);
+  -webkit-text-stroke: 1px #ffffff;
+  font-weight: 400;
+}
+
+.metaverseInfo {
+  width: 410px;
+  height: 95px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 54px;
+}
+
+/* ================================================== */
+
+/* circlesInfo */
+
+.circlesInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  left: 761px;
+  top: 112px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.circlesInfoText {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  /* line-height: 120%; */
+  color: #171719;
+}
+
+.circlesInfoCircle {
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: -2px -2px 6px rgba(50, 50, 50, 0.25),
+    2px 2px 6px rgba(50, 50, 50, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circlesInfoDot {
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+}
+
+/* ================================================== */
+
+/* roadMap */
+
+.roadMap {
+  margin-top: 260px;
+  width: 199px;
+  height: 291px;
+  text-align: center;
+
+  /*   float: right;
+  margin-top: 277px;
+  width: 199px;
+  height: 291px; */
+}
+
+.roadMapTitle {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.roadMapInfo {
+}
+
+.roadMapInfoTitle {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 28px;
+
+  letter-spacing: 1px;
+
+  color: #e75626;
+  margin-bottom: 12px;
+}
+
+.roadMapInfoText {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #ffffff;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.roadMapInfoText::before {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* смещение рамки вниз на 8px */
+  left: 0;
+  width: 100%;
+  border-bottom: 0.5px solid #d2c4c4;
+}
+
+.roadMapLastInfo .infoText::before {
+  display: none;
+}

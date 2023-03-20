@@ -1,0 +1,73 @@
+.notification {
+  background: rgba(23, 23, 23, 0.81);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* анимация закрытия Notification */
+}
+
+.notificationContainer {
+  position: absolute;
+  left: calc(50% - 422px / 2);
+  top: calc(50% - 295px / 2);
+  width: 422px;
+  height: 295px;
+  background: #262628;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #e75626;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  width: 320px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.notification a {
+  color: #e75626;
+}
+
+.notification a:link {
+  color: #e75626;
+}
+
+.notification a:visited {
+  color: #e75626;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Когда Notification нужно отображать */
+.show {
+  opacity: 1;
+}
+
+/* Когда Notification нужно скрыть */
+.hide {
+  opacity: 0;
+  z-index: -1;
+}

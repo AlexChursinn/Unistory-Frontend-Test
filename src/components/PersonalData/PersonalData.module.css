@@ -1,0 +1,18 @@
+.personalData {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  margin: 168px 64px 169px 64px;
+  position: relative;
+}
+
+.personalTitle {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.personalInfo {
+  font-size: 32px;
+  color: #e75626;
+  margin-bottom: 22px;
+}

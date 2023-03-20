@@ -1,0 +1,40 @@
+.wallet {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #e75626;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 14px 64px;
+}
+
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 199px;
+  height: 44px;
+  line-height: 120%;
+  background: #5a5a5a;
+  border: 1px dashed #c7c7c7;
+}

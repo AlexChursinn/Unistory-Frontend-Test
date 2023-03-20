@@ -1,0 +1,142 @@
+.circles {
+  position: relative;
+  z-index: -1;
+}
+
+.circleOne {
+  position: absolute;
+  z-index: 0;
+  width: 532px;
+  height: 532px;
+  background: #212124;
+  border-radius: 50%;
+}
+
+.circleTwo {
+  position: absolute;
+  z-index: 1;
+  width: 526px;
+  height: 526px;
+  background: #171719;
+  filter: blur(11px);
+  border-radius: 50%;
+}
+
+.circleThreeTwo {
+  position: absolute;
+  z-index: 1;
+}
+
+.dotOne {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.circleFour {
+  position: absolute;
+  z-index: 3;
+  width: 446px;
+  height: 446px;
+  background: #1e1e20;
+  border-radius: 50%;
+}
+
+.circleFive {
+  position: absolute;
+  z-index: 4;
+  width: 384px;
+  height: 384px;
+  background-color: transparent;
+  border: 1px solid #323232;
+  border-radius: 50%;
+}
+
+.circleSix {
+  position: absolute;
+  z-index: 5;
+  width: 370px;
+  height: 370px;
+  background-color: transparent;
+  border: 1px solid #323232;
+  border-radius: 50%;
+}
+
+.circleSeven {
+  position: absolute;
+  z-index: 6;
+  width: 320px;
+  height: 322px;
+  background: url(../../../assets/img/planet.webp) no-repeat center center /
+    320px 322px;
+}
+
+/* Изначально делал статическую оранжевую линию без анимации */
+.circleThreeOne {
+  position: absolute;
+  z-index: 2;
+  width: 486px;
+  height: 486px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+/* .circleThreeOne::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+ */
+
+.circleThreeOne::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.dotOne {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dotTwo {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #e75626;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(-135deg);
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  overflow: hidden; /* На всякий случай */
+  min-height: 100%; /* На всю высоту  */
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  /*  overflow: hidden; */ /* Скрываю часть Circles на странице PersonalData по макету */
+}

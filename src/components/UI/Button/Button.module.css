@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 24px 6px;
+  height: 38px;
+  background: #e75626;
+  border-radius: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.button:hover {
+  background: #be3b10;
+}
+
+.button.inactive {
+  opacity: 0.5;
+}

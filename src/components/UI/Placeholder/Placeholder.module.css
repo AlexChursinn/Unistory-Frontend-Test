@@ -1,0 +1,29 @@
+.placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 120px 12px 18px;
+  width: 421px;
+  height: 42px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.placeholder::placeholder {
+  opacity: 0.5;
+}
+
+.placeholder:focus {
+  border: 1px solid #e75626;
+  opacity: 0.5;
+}
+
+.placeholder.inactive {
+  opacity: 0.5;
+}
